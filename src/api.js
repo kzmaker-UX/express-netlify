@@ -1,6 +1,7 @@
+
 const express = require("express")
 const serverless = require("serverless-http")
-// const { collection, ObjectId } = require("../config/database")
+const { collection, ObjectId } = require("../config/database")
 
 const app = express()
 const router = express.Router()
