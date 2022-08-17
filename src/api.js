@@ -7,7 +7,7 @@ const app = express()
 const router = express.Router()
 
 router.get("/", (req, res) => {
-    // res.send("User List")
+    // res.send("User List") this is local part 
     collection.find().toArray((err, result) => {
         if (err) throw err;
         res.json(result)
